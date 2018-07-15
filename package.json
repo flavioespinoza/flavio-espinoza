@@ -81,7 +81,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "flow": "flow"
   },
   "keywords": []
 }
