@@ -77,17 +77,12 @@ class Home extends React.Component {
     FilterSortActions.filter(filter)
   }
 
-  sortElements (sort, e) {
-    FilterSortActions.sort(sort)
-  }
-
   shouldComponentUpdate (nextProps, nextState) {
     return !shallowEqual(this.props, nextProps) || !shallowEqual(this.state, nextState)
   }
 
   renderElements (__elements, e) {
-    return __elements.map(__obj => <Element key={__obj.id}
-                                            element={__obj}></Element>, this)
+    return __elements.map(__obj => <Element key={__obj.id} element={__obj}/>, this)
   }
 
   hideModal() {
@@ -179,13 +174,21 @@ class Home extends React.Component {
   }
 
   renderFilterButtons () {
-    return _.map(filterData, d => <Button key={d.name} active={this.props.filter == d.value}
-                                          onClick={this.filterElements.bind(this, d.value)}>{d.name}</Button>, this)
-  }
 
-  renderSortButtons () {
-    return _.map(sortData, d => <Button key={d.name} active={this.props.sort == d.value}
-                                        onClick={this.sortElements.bind(this, d.value)}>{d.name}</Button>, this)
+    const self = this
+
+    const active = function (d) {
+      if (self.props.filter === d.value) {
+        return 'mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--accent'
+      } else {
+        return 'mdl-button mdl-js-button mdl-js-ripple-effect'
+      }
+    }
+
+    return _.map(filterData, d => <button key={d.name}
+                                          className={active(d)}
+                                          onClick={this.filterElements.bind(this, d.value)}>{d.name}</button>, this)
+
   }
 
   onKeyPress (e) {
@@ -225,11 +228,9 @@ class Home extends React.Component {
 
             <div className={'filter-btns'}>
 
-              <ButtonGroup>
-
+              <div>
                 {this.renderFilterButtons()}
-
-              </ButtonGroup>
+              </div>
 
             </div>
 
