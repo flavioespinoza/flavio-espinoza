@@ -1,6 +1,6 @@
 # Full Stack Mobile and Web App Portfolio
 
-[Screen Shot](public/img/screen-shot.png)
+![Screen Shot](public/img/screen-shot.png)
 
 
 
