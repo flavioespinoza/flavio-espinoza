@@ -1,13 +1,16 @@
 {
   "name": "flavio-espinoza",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": false,
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "semantic-release": "^15.7.1",
+    "travis-deploy-once": "^5.0.1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flavioespinoza/flavio-espinoza.git"
+    "url": "https://github.com/flavioespinoza/flavio-espinoza.git"
   },
   "author": "Flavio Espinoza",
   "license": "ISC",
@@ -25,6 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   }
 }
