@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react'
 import shallowEqual from 'react-pure-render/shallowEqual'
 import { Grid, Modal, ModalBody, ModalHeader, ModalFooter, Carousel, CarouselItem } from 'react-bootstrap'
