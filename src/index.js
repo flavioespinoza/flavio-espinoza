@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker'
 
 const content = document.getElementById('content')
 
+
 ReactDOM.render(<Home/>, content)
 
 registerServiceWorker()
