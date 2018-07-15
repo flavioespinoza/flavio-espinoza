@@ -52,7 +52,7 @@ class Element extends Component {
       <div id={this.props.element.id}
            onMouseEnter={() => this.onHover(this.props.element.id)}
            onClick={() => {this.handleShow(this.props.element.id)}}
-           className={`element-item mdl-shadow--2dp ${this.props.element.classes.join(' ')}`}
+           className={`element-item ${this.props.element.classes.join(' ')}`}
            data-category={this.props.element.category}>
 
         <p className={'symbol'}>

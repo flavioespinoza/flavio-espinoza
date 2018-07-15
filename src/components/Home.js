@@ -1,6 +1,6 @@
 import React from 'react'
 import shallowEqual from 'react-pure-render/shallowEqual'
-import { Grid, Button, ButtonGroup, Alert, Modal, ModalBody, ModalHeader, ModalFooter, Carousel, CarouselItem } from 'react-bootstrap'
+import { Grid, Modal, ModalBody, ModalHeader, ModalFooter, Carousel, CarouselItem } from 'react-bootstrap'
 
 import IsotopeResponseRenderer from './IsotopeResponseRenderer'
 import Element from './Element'
@@ -11,8 +11,6 @@ import ElementStore from '../flux/stores/ElementStore'
 import FilterSortActions from '../flux/actions/FilterSortActions'
 import FilterSortStore from '../flux/stores/FilterSortStore'
 import connectToStores from 'alt-utils/lib/connectToStores'
-
-import * as elements from '../elements'
 
 const log = require('ololog').configure({
   locate: false
@@ -26,14 +24,6 @@ const filterData = [
   {name: 'design', value: '.design'},
   {name: 'mobile', value: '.mobile'},
 ]
-
-const sortData = [
-  {name: 'original order', value: ''},
-  {name: 'date', value: 'weight'},
-  {name: 'symbol', value: 'symbol'},
-]
-
-let open_modal = false
 
 class Home extends React.Component {
   constructor (props, context) {
@@ -140,17 +130,18 @@ class Home extends React.Component {
         show = false
       }
 
+      const style = {
+        fontSize: 24,
+        color: '#FFFFFF'
+      }
+
       return (
 
         <Modal show={show}
                bsSize={'large'}
                onHide={this.hideModal}>
 
-          <ModalHeader className={modal_header_class}>
-            <Modal.Title>
-              {modal_results.title}
-            </Modal.Title>
-          </ModalHeader>
+          <div style={style} className={'pt24 pl24 pb12'}>{modal_results.title}</div>
 
           <ModalBody className={modal_body_class}>
 
@@ -162,7 +153,7 @@ class Home extends React.Component {
 
             <p className={'modal-footer--text'}>{modal_results.text}</p>
 
-            <Button onClick={this.hideModal}>close</Button>
+            <button className={'mdl-button mdl-js-button mdl-js-ripple-effect'} onClick={this.hideModal}>close</button>
 
           </ModalFooter>
 
@@ -222,9 +213,9 @@ class Home extends React.Component {
 
         <Grid fluid={true}>
 
-          <h3 className={'main-title'}>The Periodic Table of Flavio</h3>
+          <h3 className={'main-title p12 m0'}>The Periodic Table of Flavio</h3>
 
-          <div className={'main-btn-group'}>
+          <div className={'main-btn-group mb0'}>
 
             <div className={'filter-btns'}>
 

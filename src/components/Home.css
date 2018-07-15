@@ -16,47 +16,74 @@
 .main-title {
   opacity: 0.50;
 }
+.main-btn-group {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.main-btn-group .btn-group button.btn.btn-default {
+  height: 26px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 11px;
+}
+.main-btn-group .btn-group button.active {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+.main-btn-group .filter-btns {
+  float: left;
+}
+.main-btn-group .label {
+  margin-left: 6px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  opacity: 0.50;
+}
 .color--lcars {
-  color: #e9af1a;
+  color: #e9af1a !important;
 }
 .color--voluson {
-  color: #3b73b9;
+  color: #3b73b9 !important;
 }
 .color--medical_records {
-  color: #8dcebe;
+  color: #8dcebe !important;
 }
 .color--nike {
-  color: #e18802;
+  color: #e18802 !important;
 }
 .color--forest_service {
-  color: #6ebc20;
+  color: #6ebc20 !important;
 }
 .color--elemental {
-  color: #d15018;
+  color: #d15018 !important;
 }
 .color--inter_arma {
-  color: #a40000;
+  color: #a40000 !important;
 }
 .color--power {
-  color: #e0d698;
+  color: #e0d698 !important;
 }
 .color--lighting {
-  color: #639bdf;
+  color: #639bdf !important;
 }
 .color--relativity {
-  color: #639bdf;
+  color: #639bdf !important;
 }
 .color--ebay {
-  color: #e33234;
+  color: #e33234 !important;
 }
 .color--vivint {
-  color: #ff8200;
+  color: #ff8200 !important;
 }
 .color--fluent {
-  color: #f64b51;
+  color: #f64b51 !important;
 }
 .color--street_fighter {
-  color: #9598b1;
+  color: #9598b1 !important;
 }
 .element-item {
   position: relative;
@@ -253,13 +280,6 @@
   -ms-text-align-last: right;
   text-align: left;
 }
-.modal-footer button.btn.btn-default {
-  height: 28px;
-  padding-top: 0;
-  padding-bottom: 3px;
-  border-radius: 0;
-  font-size: 12px;
-}
 .modal-content {
   border-radius: 0;
 }
@@ -272,4 +292,459 @@
 .carousel-control.right,
 .carousel-control.left {
   background-image: none;
+}
+#lcars {
+  border: 1px solid rgba(233, 175, 26, 0.4) !important;
+}
+#lcars .symbol {
+  background: rgba(233, 175, 26, 0.9) !important;
+}
+#lcars .element-img {
+  height: 518px;
+  top: -64px;
+  left: -240px;
+}
+#lcars:hover {
+  border: 1px solid rgba(233, 175, 26, 0.9) !important;
+}
+#lcars:hover .symbol {
+  background: rgba(233, 175, 26, 0.9) !important;
+}
+#lcars:hover .symbol {
+  background: rgba(233, 175, 26, 0.2) !important;
+}
+.modal-header__lcars,
+.modal-footer__lcars {
+  color: rgba(233, 175, 26, 0.9) !important;
+}
+.modal-header__lcars button,
+.modal-footer__lcars button {
+  background-color: rgba(233, 175, 26, 0.6) !important;
+}
+#voluson {
+  border: 1px solid rgba(59, 115, 185, 0.6) !important;
+}
+#voluson .symbol {
+  background: rgba(59, 115, 185, 0.9) !important;
+}
+#voluson .element-img {
+  height: 532px;
+  top: -69px;
+  left: -242px;
+}
+#voluson:hover {
+  border: 1px solid rgba(59, 115, 185, 0.9) !important;
+}
+#voluson:hover .symbol {
+  background: rgba(59, 115, 185, 0.9) !important;
+}
+#voluson:hover .symbol {
+  background: rgba(59, 115, 185, 0.2) !important;
+}
+.modal-header__voluson,
+.modal-footer__voluson {
+  color: #4689dd !important;
+}
+.modal-header__voluson button,
+.modal-footer__voluson button {
+  background-color: rgba(59, 115, 185, 0.6) !important;
+}
+#medical_records {
+  border: 1px solid rgba(141, 206, 190, 0.3) !important;
+}
+#medical_records .symbol {
+  background: rgba(141, 206, 190, 0.9) !important;
+}
+#medical_records .element-img {
+  height: 1212px;
+  bottom: -84px;
+  right: -223px;
+}
+#medical_records:hover {
+  border: 1px solid rgba(141, 206, 190, 0.7) !important;
+}
+#medical_records:hover .symbol {
+  background: rgba(141, 206, 190, 0.9) !important;
+}
+#medical_records:hover .symbol {
+  background: rgba(141, 206, 190, 0.2) !important;
+}
+.modal-header__medical_records,
+.modal-footer__medical_records {
+  color: rgba(141, 206, 190, 0.9) !important;
+}
+.modal-header__medical_records button,
+.modal-footer__medical_records button {
+  background-color: rgba(141, 206, 190, 0.6) !important;
+}
+#nike {
+  border: 1px solid rgba(225, 136, 2, 0.5) !important;
+}
+#nike .symbol {
+  background: rgba(225, 136, 2, 0.9) !important;
+}
+#nike .element-img {
+  height: 268px;
+  top: 0;
+  right: 0;
+}
+#nike:hover {
+  border: 1px solid rgba(225, 136, 2, 0.9) !important;
+}
+#nike:hover .symbol {
+  background: rgba(225, 136, 2, 0.9) !important;
+}
+#nike:hover .symbol {
+  background: rgba(225, 136, 2, 0.2) !important;
+}
+.modal-header__nike,
+.modal-footer__nike {
+  color: rgba(225, 136, 2, 0.7) !important;
+}
+.modal-header__nike button,
+.modal-footer__nike button {
+  background-color: rgba(225, 136, 2, 0.6) !important;
+}
+#forest_service {
+  border: 1px solid rgba(110, 188, 32, 0.5) !important;
+}
+#forest_service .symbol {
+  background: rgba(110, 188, 32, 0.9) !important;
+}
+#forest_service .element-img {
+  height: 394px;
+  bottom: 0;
+  left: -400px;
+}
+#forest_service:hover {
+  border: 1px solid rgba(110, 188, 32, 0.9) !important;
+}
+#forest_service:hover .symbol {
+  background: rgba(110, 188, 32, 0.9) !important;
+}
+#forest_service:hover .symbol {
+  background: rgba(110, 188, 32, 0.2) !important;
+}
+.modal-header__forest_service,
+.modal-footer__forest_service {
+  color: rgba(110, 188, 32, 0.7) !important;
+}
+.modal-header__forest_service button,
+.modal-footer__forest_service button {
+  background-color: rgba(110, 188, 32, 0.6) !important;
+}
+#street_fighter {
+  border: 1px solid rgba(149, 152, 177, 0.5) !important;
+}
+#street_fighter .symbol {
+  background: rgba(149, 152, 177, 0.8) !important;
+}
+#street_fighter .element-img {
+  height: 519px;
+  top: -105px;
+  left: -205px;
+}
+#street_fighter:hover {
+  border: 1px solid rgba(149, 152, 177, 0.9) !important;
+}
+#street_fighter:hover .symbol {
+  background: rgba(149, 152, 177, 0.9) !important;
+}
+#street_fighter:hover .symbol {
+  background: rgba(149, 152, 177, 0.2) !important;
+}
+.modal-header__street_fighter,
+.modal-footer__street_fighter {
+  color: rgba(149, 152, 177, 0.8) !important;
+}
+.modal-header__street_fighter button,
+.modal-footer__street_fighter button {
+  background-color: rgba(149, 152, 177, 0.6) !important;
+}
+#elemental {
+  border: 1px solid rgba(209, 80, 24, 0.6) !important;
+}
+#elemental .symbol {
+  background: rgba(209, 80, 24, 0.9) !important;
+}
+#elemental .element-img {
+  height: 236px;
+  bottom: 6px;
+  left: 12px;
+}
+#elemental:hover {
+  border: 1px solid rgba(209, 80, 24, 0.9) !important;
+}
+#elemental:hover .symbol {
+  background: rgba(209, 80, 24, 0.9) !important;
+}
+#elemental:hover .symbol {
+  background: rgba(209, 80, 24, 0.2) !important;
+}
+.modal-body__elemental .carousel-indicators li {
+  border: 1px solid #d15018 !important;
+  background-color: rgba(209, 80, 24, 0.2) !important;
+}
+.modal-body__elemental .carousel-indicators .active {
+  background-color: rgba(209, 80, 24, 0.6) !important;
+}
+.modal-body__elemental .carousel-control .glyphicon-chevron-right {
+  color: #d15018 !important;
+}
+.modal-body__elemental .carousel-control .glyphicon-chevron-left {
+  color: #d15018 !important;
+}
+.modal-header__elemental,
+.modal-footer__elemental {
+  color: rgba(209, 80, 24, 0.9) !important;
+}
+.modal-header__elemental button,
+.modal-footer__elemental button {
+  background-color: rgba(209, 80, 24, 0.6) !important;
+}
+#inter_arma {
+  border: 1px solid rgba(164, 0, 0, 0.9) !important;
+}
+#inter_arma .symbol {
+  background: rgba(164, 0, 0, 0.9) !important;
+}
+#inter_arma .element-img {
+  height: 1080px;
+  top: -56px;
+  left: -126px;
+}
+#inter_arma:hover {
+  border: 1px solid rgba(164, 0, 0, 0.9) !important;
+}
+#inter_arma:hover .symbol {
+  background: rgba(164, 0, 0, 0.9) !important;
+}
+#inter_arma:hover .symbol {
+  background: rgba(164, 0, 0, 0.2) !important;
+}
+.modal-header__inter_arma,
+.modal-footer__inter_arma {
+  color: #e30000 !important;
+}
+.modal-header__inter_arma button,
+.modal-footer__inter_arma button {
+  background-color: rgba(164, 0, 0, 0.6) !important;
+}
+#power {
+  border: 1px solid rgba(224, 214, 152, 0.6) !important;
+}
+#power .symbol {
+  background: rgba(224, 214, 152, 0.8) !important;
+}
+#power .element-img {
+  height: 1648px;
+  bottom: -278px;
+  right: -48px;
+}
+#power:hover {
+  border: 1px solid rgba(224, 214, 152, 0.9) !important;
+}
+#power:hover .symbol {
+  background: rgba(224, 214, 152, 0.9) !important;
+}
+#power:hover .symbol {
+  background: rgba(224, 214, 152, 0.2) !important;
+}
+.modal-header__power,
+.modal-footer__power {
+  color: rgba(224, 214, 152, 0.9) !important;
+}
+.modal-header__power button,
+.modal-footer__power button {
+  background-color: rgba(224, 214, 152, 0.6) !important;
+}
+#lighting {
+  border: 1px solid rgba(99, 155, 223, 0.9) !important;
+}
+#lighting .symbol {
+  background: rgba(99, 155, 223, 0.9) !important;
+}
+#lighting .element-img {
+  bottom: -379px;
+  right: -462px;
+}
+#lighting:hover {
+  border: 1px solid rgba(99, 155, 223, 0.9) !important;
+}
+#lighting:hover .symbol {
+  background: rgba(99, 155, 223, 0.9) !important;
+}
+#lighting:hover .symbol {
+  background: rgba(99, 155, 223, 0.2) !important;
+}
+.modal-header__lighting,
+.modal-footer__lighting {
+  color: rgba(99, 155, 223, 0.9) !important;
+}
+.modal-header__lighting button,
+.modal-footer__lighting button {
+  background-color: rgba(99, 155, 223, 0.6) !important;
+}
+#relativity {
+  border: 1px solid rgba(99, 155, 223, 0.7) !important;
+}
+#relativity .symbol {
+  background: rgba(99, 155, 223, 0.7) !important;
+}
+#relativity .element-img {
+  bottom: -358px;
+  right: -580px;
+}
+#relativity:hover {
+  border: 1px solid rgba(99, 155, 223, 0.9) !important;
+}
+#relativity:hover .symbol {
+  background: rgba(99, 155, 223, 0.9) !important;
+}
+#relativity:hover .symbol {
+  background: rgba(99, 155, 223, 0.2) !important;
+}
+.modal-header__relativity,
+.modal-footer__relativity {
+  color: rgba(99, 155, 223, 0.9) !important;
+}
+.modal-header__relativity button,
+.modal-footer__relativity button {
+  background-color: rgba(99, 155, 223, 0.6) !important;
+}
+#ebay {
+  border: 1px solid rgba(227, 50, 52, 0.9) !important;
+}
+#ebay .symbol {
+  background: rgba(227, 50, 52, 0.8) !important;
+}
+#ebay .element-img {
+  height: 677px;
+  top: -88px;
+  left: -17px;
+}
+#ebay:hover {
+  border: 1px solid rgba(227, 50, 52, 0.9) !important;
+}
+#ebay:hover .symbol {
+  background: rgba(227, 50, 52, 0.9) !important;
+}
+#ebay:hover .symbol {
+  background: rgba(227, 50, 52, 0.2) !important;
+}
+.modal-header__ebay,
+.modal-footer__ebay {
+  color: rgba(227, 50, 52, 0.9) !important;
+}
+.modal-header__ebay button,
+.modal-footer__ebay button {
+  background-color: rgba(227, 50, 52, 0.6) !important;
+}
+#vivint {
+  border: 1px solid rgba(255, 130, 0, 0.9) !important;
+}
+#vivint .symbol {
+  background: rgba(255, 130, 0, 0.8) !important;
+}
+#vivint .element-img {
+  height: 478px;
+  top: 0;
+  left: -22px;
+}
+#vivint:hover {
+  border: 1px solid rgba(255, 130, 0, 0.9) !important;
+}
+#vivint:hover .symbol {
+  background: rgba(255, 130, 0, 0.9) !important;
+}
+#vivint:hover .symbol {
+  background: rgba(255, 130, 0, 0.2) !important;
+}
+.modal-header__vivint,
+.modal-footer__vivint {
+  color: rgba(255, 130, 0, 0.9) !important;
+}
+.modal-header__vivint button,
+.modal-footer__vivint button {
+  background-color: rgba(255, 130, 0, 0.6) !important;
+}
+.modal-body__vivint .carousel-indicators li {
+  border: 1px solid #ff8200 !important;
+  background-color: rgba(255, 130, 0, 0.2) !important;
+  bottom: 0;
+}
+.modal-body__vivint .carousel-indicators .active {
+  background-color: rgba(255, 130, 0, 0.6) !important;
+}
+.modal-body__vivint .carousel-control .glyphicon-chevron-right {
+  color: #ff8200 !important;
+}
+.modal-body__vivint .carousel-control .glyphicon-chevron-left {
+  color: #ff8200 !important;
+}
+.modal-header__vivint,
+.modal-footer__vivint {
+  color: rgba(255, 130, 0, 0.9) !important;
+}
+.modal-header__vivint button,
+.modal-footer__vivint button {
+  background-color: rgba(255, 130, 0, 0.6) !important;
+}
+#fluent {
+  border: 1px solid rgba(246, 75, 81, 0.8) !important;
+}
+#fluent .symbol {
+  background: rgba(246, 75, 81, 0.8) !important;
+}
+#fluent .element-img {
+  height: 578px;
+  top: -198px;
+  left: 1px;
+}
+#fluent:hover {
+  border: 1px solid rgba(246, 75, 81, 0.9) !important;
+}
+#fluent:hover .symbol {
+  background: rgba(246, 75, 81, 0.9) !important;
+}
+#fluent:hover .symbol {
+  background: rgba(246, 75, 81, 0.2) !important;
+}
+.modal-header__fluent,
+.modal-footer__fluent {
+  color: rgba(246, 75, 81, 0.9) !important;
+}
+.modal-header__fluent button,
+.modal-footer__fluent button {
+  background-color: rgba(246, 75, 81, 0.6) !important;
+}
+.modal-body__fluent #fluent {
+  margin: 0 auto;
+}
+.modal-body__fluent img {
+  width: 50%;
+  margin: 0 auto;
+  padding: 12px;
+}
+.modal-body__fluent .carousel-indicators {
+  bottom: 12px;
+}
+.modal-body__fluent .carousel-indicators li {
+  border: 1px solid #f64b51 !important;
+  background-color: rgba(246, 75, 81, 0.2) !important;
+}
+.modal-body__fluent .carousel-indicators .active {
+  background-color: rgba(246, 75, 81, 0.6) !important;
+}
+.modal-body__fluent .carousel-control .glyphicon-chevron-right {
+  color: #f64b51 !important;
+}
+.modal-body__fluent .carousel-control .glyphicon-chevron-left {
+  color: #f64b51 !important;
+}
+.modal-content {
+  background-color: #303030;
+}
+.element-item .symbol {
+  line-height: 52px !important;
 }
