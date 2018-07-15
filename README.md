@@ -1,7 +1,6 @@
 ## Full Stack Web and Mobile App Portfolio
 
-![Screen Shot](public/img/screen-shot.png)
-
+![Screen Shot](public/img/screen-shot-prod.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
