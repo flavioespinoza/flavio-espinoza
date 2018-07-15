@@ -1,4 +1,4 @@
-# Full Stack Mobile and Web App Portfolio
+## Full Stack Web and Mobile App Portfolio
 
 ![Screen Shot](public/img/screen-shot.png)
 
