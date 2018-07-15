@@ -88,8 +88,8 @@
 .element-item {
   position: relative;
   float: left;
-  width: 252px;
-  height: 252px;
+  width: 200px;
+  height: 200px;
   margin: 4px;
   padding: 8px;
   background: rgba(0, 0, 0, 0.75);
@@ -112,7 +112,7 @@
 }
 .element-item .symbol-large {
   display: none;
-  width: 252px;
+  width: 200px;
 }
 .element-item .weight {
   position: relative;
@@ -149,11 +149,11 @@
   opacity: 1;
 }
 .element-item:hover .symbol {
-  width: 252px;
-  height: 252px;
+  width: 200px;
+  height: 200px;
   -webkit-transition: width 300ms;
   transition: width 300ms;
-  font-size: 24px;
+  font-size: 16px;
   padding-top: 16px !important;
   padding-left: 0 !important;
   text-align: center;
@@ -179,8 +179,8 @@
 .element-item-sizer {
   position: relative;
   float: left;
-  width: 252px;
-  height: 252px;
+  width: 200px;
+  height: 200px;
   margin: 4px;
   padding: 8px;
   background: rgba(0, 0, 0, 0.75);
@@ -204,7 +204,7 @@
 }
 .element-item-sizer .symbol-large {
   display: none;
-  width: 252px;
+  width: 200px;
 }
 .element-item-sizer .weight {
   position: relative;
@@ -241,11 +241,11 @@
   opacity: 1;
 }
 .element-item-sizer:hover .symbol {
-  width: 252px;
-  height: 252px;
+  width: 200px;
+  height: 200px;
   -webkit-transition: width 300ms;
   transition: width 300ms;
-  font-size: 24px;
+  font-size: 16px;
   padding-top: 16px !important;
   padding-left: 0 !important;
   text-align: center;
@@ -699,7 +699,7 @@
 #fluent .element-img {
   height: 578px;
   top: -198px;
-  left: 1px;
+  left: -6px;
 }
 #fluent:hover {
   border: 1px solid rgba(246, 75, 81, 0.9) !important;
