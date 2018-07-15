@@ -225,8 +225,6 @@ class Home extends React.Component {
 
             <div className={'filter-btns'}>
 
-              <div className={'label'}>filter</div>
-
               <ButtonGroup>
 
                 {this.renderFilterButtons()}
