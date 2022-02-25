@@ -1,160 +1,171 @@
 // const img_volusen = require('img/ipad_ge_volusen_e8_interface_by_flavioespinoza-d55hng3.png')
 // const img_volusen = require('img/ipad_ge_volusen_e8_interface_by_flavioespinoza-d55hng3.png')
 
-const _ = require('lodash')
+const _ = require('lodash');
 const log = require('ololog').configure({
-  locate: false
-})
+  locate: false,
+});
 
 let images_arr = [
   {
     id: 'medical_records',
-    'title': 'iPad Medical Records App',
-    'images': [
+    title: 'iPad Medical Records App',
+    images: [
       'https://i.imgur.com/DLq0pgU.png',
       'https://i.imgur.com/Lq9PDrP.png',
       'https://i.imgur.com/voM8mAl.png',
       'https://i.imgur.com/BCOIphj.png',
       'https://i.imgur.com/dmqdISv.png',
       'https://i.imgur.com/kSSQ3ts.png',
-      'https://i.imgur.com/o0LvGTz.png'
-    ]
+      'https://i.imgur.com/o0LvGTz.png',
+    ],
   },
   {
     id: 'street_fighter',
-    'title': 'Street Fighter Crypto Trader',
-    'images': [
+    title: 'Street Fighter Crypto Trader',
+    images: [
       'https://i.imgur.com/8QVXafS.png',
       'https://i.imgur.com/GmGotAL.png',
       'https://i.imgur.com/DoE3wmr.png',
       'https://i.imgur.com/mYPzrWR.png',
       'https://i.imgur.com/piqumyn.png',
       'https://i.imgur.com/O2eyotP.png',
-      'https://i.imgur.com/kgrF3IE.png'
-    ]
+      'https://i.imgur.com/kgrF3IE.png',
+    ],
   },
   {
     id: 'fluent',
-    'title': 'Start to Fluent iPhone App',
-    'images': [
-      "https://i.imgur.com/MaEZG5q.png",
-      "https://i.imgur.com/oZILF8Y.png",
-      "https://i.imgur.com/4m0Rlkp.png",
-      "https://i.imgur.com/Zy7rbxV.png",
-      "https://i.imgur.com/xAdpSqt.png",
-      "https://i.imgur.com/k2Nmnwf.png",
-      "https://i.imgur.com/W6oUaj2.png",
-      "https://i.imgur.com/v34sIuG.png",
-      "https://i.imgur.com/399Fcgt.png",
-      "https://i.imgur.com/nias0gx.png",
-      "https://i.imgur.com/ZA7jmaD.png"
-    ]
+    title: 'Start to Fluent iPhone App',
+    images: [
+      'https://i.imgur.com/MaEZG5q.png',
+      'https://i.imgur.com/oZILF8Y.png',
+      'https://i.imgur.com/4m0Rlkp.png',
+      'https://i.imgur.com/Zy7rbxV.png',
+      'https://i.imgur.com/xAdpSqt.png',
+      'https://i.imgur.com/k2Nmnwf.png',
+      'https://i.imgur.com/W6oUaj2.png',
+      'https://i.imgur.com/v34sIuG.png',
+      'https://i.imgur.com/399Fcgt.png',
+      'https://i.imgur.com/nias0gx.png',
+      'https://i.imgur.com/ZA7jmaD.png',
+    ],
   },
   {
     id: 'power',
-    'title': 'IOT Power Distribution Map',
-    'images': [
+    title: 'IOT Power Distribution Map',
+    images: [
       'https://i.imgur.com/gBk7CLE.png',
       'https://i.imgur.com/jbk7Q4M.png',
       'https://i.imgur.com/XsifqvD.png',
       'https://i.imgur.com/cIzKPw9.png',
       'https://i.imgur.com/BcGmzKs.png',
-      'https://i.imgur.com/rnTH3CU.png'
-    ]
+      'https://i.imgur.com/rnTH3CU.png',
+    ],
   },
   {
     id: 'ui',
-    'title': 'User Interface Designs',
-    'images': [
+    title: 'User Interface Designs',
+    images: [
       'https://i.imgur.com/qNwaIJY.png',
       'https://i.imgur.com/3D05WNu.png',
       'https://i.imgur.com/8vu5n3T.png',
       'https://i.imgur.com/44WAnGl.png',
       'https://i.imgur.com/kXNwmJI.png',
       'https://i.imgur.com/ffpQHKV.png',
-      'https://i.imgur.com/Pxt3qK9.png'
-    ]
+      'https://i.imgur.com/Pxt3qK9.png',
+    ],
   },
   {
     id: 'nike',
-    'title': 'Nike Data Analytics',
-    'images': [
+    title: 'Nike Data Analytics',
+    images: [
       'https://i.imgur.com/zLq2bLW.png',
       'https://i.imgur.com/tmGLWRx.png',
       'https://i.imgur.com/qoZ2HQg.png',
-      'https://i.imgur.com/9BgXocG.png'
-    ]
+      'https://i.imgur.com/9BgXocG.png',
+    ],
   },
   {
     id: 'vivint',
-    'title': 'Vivint Solar',
-    'images': [
+    title: 'Vivint Solar',
+    images: [
       'https://i.imgur.com/ViZBiHr.png',
       'https://i.imgur.com/HA82Fgi.png',
       'https://i.imgur.com/75gDq28.png',
       'https://i.imgur.com/qhE03fD.png',
       'https://i.imgur.com/FApjKn8.png',
       'https://i.imgur.com/9R8c4OC.png',
-      'https://i.imgur.com/sDW4sWT.png'
-    ]
+      'https://i.imgur.com/sDW4sWT.png',
+    ],
   },
   {
     id: 'lcars',
-    'title': 'iPad LCARS Interface',
-    'images': [
+    title: 'iPad LCARS Interface',
+    images: [
       'https://i.imgur.com/RstCWqe.png',
       'https://i.imgur.com/i9cBHuj.png',
-      'https://i.imgur.com/rW1Z2UA.png'
-    ]
+      'https://i.imgur.com/rW1Z2UA.png',
+    ],
   },
   {
     id: 'elemental',
-    'title': 'Elemental iPhone App',
-    'images': [
+    title: 'Elemental iPhone App',
+    images: [
       'https://i.imgur.com/BxdezDy.png',
       'https://i.imgur.com/ITtjjLy.png',
       'https://i.imgur.com/C2idg3h.png',
-      'https://i.imgur.com/pq6oEEX.png'
-    ]
-  }
-]
+      'https://i.imgur.com/pq6oEEX.png',
+    ],
+  },
+];
 
-function create_element (id, classes, category, name, symbol, number, weight, img_url, images, title, text) {
-
-  let project = _.find(images_arr, {id: id})
+function create_element(
+  id,
+  classes,
+  category,
+  name,
+  symbol,
+  number,
+  weight,
+  img_url,
+  images,
+  title,
+  text
+) {
+  let project = _.find(images_arr, { id: id });
 
   if (project) {
-    img_url = project.images[0]
-    images = project.images
+    img_url = project.images[0];
+    images = project.images;
     if (project.id === 'fluent') {
-      img_url = project.images[6]
+      img_url = project.images[6];
     }
     if (project.id === 'medical_records') {
-      img_url = project.images[6]
+      img_url = project.images[6];
     }
   } else if (id === 'lighting') {
-    project = _.find(images_arr, {id: 'ui'})
-    img_url = project.images[6]
-    images = [project.images[6]]
+    project = _.find(images_arr, { id: 'ui' });
+    img_url = project.images[6];
+    images = [project.images[6]];
   } else if (id === 'relativity') {
-    img_url = 'https://i.imgur.com/N54Ot9y.png'
-    images = ['https://i.imgur.com/N54Ot9y.png']
+    img_url = 'https://i.imgur.com/N54Ot9y.png';
+    images = ['https://i.imgur.com/N54Ot9y.png'];
   } else if (id === 'ebay') {
-    project = _.find(images_arr, {id: 'ui'})
-    img_url = project.images[3]
-    images = [project.images[3]]
+    project = _.find(images_arr, { id: 'ui' });
+    img_url = project.images[3];
+    images = [project.images[3]];
   } else if (id === 'forest_service') {
-    project = _.find(images_arr, {id: 'ui'})
-    img_url = project.images[0]
-    images = [project.images[0]]
+    project = _.find(images_arr, { id: 'ui' });
+    img_url = project.images[0];
+    images = [project.images[0]];
   } else if (id === 'voluson') {
-    project = _.find(images_arr, {id: 'ui'})
-    img_url = project.images[5]
-    images = [project.images[5]]
+    project = _.find(images_arr, { id: 'ui' });
+    img_url = project.images[5];
+    images = [project.images[5]];
   } else if (id === 'inter_arma') {
-    project = _.find(images_arr, {id: 'ui'})
-    img_url = project.images[4]
-    images = [project.images[4]]
+    project = _.find(images_arr, { id: 'ui' });
+    img_url = project.images[4];
+    images = [project.images[4]];
   }
 
   return {
@@ -168,12 +179,11 @@ function create_element (id, classes, category, name, symbol, number, weight, im
     img_url: img_url,
     images: images,
     title: title,
-    text: text
-  }
+    text: text,
+  };
 }
 
 const elements = [
-
   create_element(
     'street_fighter',
     ['transition', 'design', 'react', 'development', 'street_fighter'],
@@ -198,8 +208,8 @@ const elements = [
     'Web & Mobile',
     null,
     [],
-    'Vivint Solar wireframe\'s and rapid prototyping.',
-    'Vivint Solar wireframe\'s and rapid prototyping.'
+    "Vivint Solar wireframe's and rapid prototyping.",
+    "Vivint Solar wireframe's and rapid prototyping."
   ),
 
   create_element(
@@ -226,8 +236,8 @@ const elements = [
     'Web',
     null,
     [],
-    'Nike\'s limited re-release of Air Jordan\'s.',
-    'Dashboard\'s of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael \'Air\' Jordan series footwear during the 2012 Christmas shopping season.'
+    "Nike's limited re-release of Air Jordan's.",
+    "Dashboard's of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael 'Air' Jordan series footwear during the 2012 Christmas shopping season."
   ),
 
   create_element(
@@ -241,7 +251,7 @@ const elements = [
     null,
     [],
     'Relativity sentiment analytic dashboard.',
-    'Dashboard of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael \'Air\' Jordan series footwear during the 2012 Christmas shopping season.'
+    "Dashboard of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael 'Air' Jordan series footwear during the 2012 Christmas shopping season."
   ),
 
   create_element(
@@ -255,7 +265,7 @@ const elements = [
     null,
     [],
     'Ebay influencers analytic dashboard.',
-    'Dashboard of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael \'Air\' Jordan series footwear during the 2012 Christmas shopping season.'
+    "Dashboard of natural language processing analysis of consumer sentiment and top influencers based on live Twitter feeds during the re-release of certain Michael 'Air' Jordan series footwear during the 2012 Christmas shopping season."
   ),
 
   create_element(
@@ -340,23 +350,22 @@ const elements = [
     [],
     'iPad LCARS Medical Diagnostic Interface',
     'A medical diagnostic app inspired by the LCARS computer interface from Star Trek TNG'
-  )
+  ),
+];
 
-]
-
-export function __all () {
-  return elements
+export function __all() {
+  return elements;
 }
 
-export function __modal (__id) {
+export function __modal(__id) {
   let filter = _.filter(elements, function (e) {
-    return e.id === __id
-  })
-  return filter[0]
+    return e.id === __id;
+  });
+  return filter[0];
 }
 
-export function __filter (__class) {
+export function __filter(__class) {
   return _.filter(elements, function (e) {
-    return _.includes(e.classes, __class)
-  })
+    return _.includes(e.classes, __class);
+  });
 }
